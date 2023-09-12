@@ -80,6 +80,12 @@ select produto, receita from vendas
 where receita = (select min(receita) from vendas);
 
 -- Exercício 19
+SELECT nome, 
+       (SELECT COUNT(DISTINCT curso) 
+        FROM matriculas 
+        WHERE matriculas.aluno_id = alunos.id) AS qntd_cursos
+FROM alunos
+order by qntd_cursos, nome;
 
 -- Exercício 20
 
