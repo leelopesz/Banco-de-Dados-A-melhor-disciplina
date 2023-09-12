@@ -33,6 +33,9 @@ select produto, avg(receita) as media_de_receita from vendas
 group by produto;
 
 -- Exercício 09
+select produto, sum(receita) as receita_total from vendas
+group by produto
+having sum(receita) > 10000.00;
 
 -- Exercício 10
 
