@@ -95,7 +95,7 @@ from vendas
 group by produto
 order by qntd_transacoes desc;
 
---Fim da Lista!!!
+--Fim da Lista!!!!
 
 
 
