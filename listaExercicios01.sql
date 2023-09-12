@@ -76,6 +76,8 @@ group by nome
 order by numero_de_livros desc;
 
 -- Exercício 17
+select produto, receita from vendas
+where receita = (select min(receita) from vendas);
 
 -- Exercício 19
 
