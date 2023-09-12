@@ -38,6 +38,10 @@ group by produto
 having sum(receita) > 10000.00;
 
 -- Exercício 10
+select nome as autor, count(livros.id) as numero_de_livros from autores
+left join livros on autores.id = livros.autor_id
+group by nome
+having count(livros.id) >= 2;
 
 -- Exercício 12
 
