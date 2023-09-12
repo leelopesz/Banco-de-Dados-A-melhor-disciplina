@@ -70,6 +70,10 @@ inner join alunos on matriculas.aluno_id = alunos.id
 order by curso;
 
 -- Exercício 16
+select nome as autor, count(livros.id) as numero_de_livros from autores
+left join livros on autores.id = livros.autor_id
+group by nome
+order by numero_de_livros desc;
 
 -- Exercício 17
 
