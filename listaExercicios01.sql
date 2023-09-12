@@ -59,12 +59,15 @@ left join livros on autores.id = livros.autor_id
 order by nome;
 
 -- Exercício 14
-select distinct curso, alunos.nome as aluno from matriculas
+select distinct curso, nome as aluno from matriculas
 right join alunos on matriculas.aluno_id = alunos.id
 where curso is not null
 order by curso;
 
 -- Exercício 15
+select distinct nome as aluno, matriculas.curso from matriculas
+inner join alunos on matriculas.aluno_id = alunos.id
+order by curso;
 
 -- Exercício 16
 
