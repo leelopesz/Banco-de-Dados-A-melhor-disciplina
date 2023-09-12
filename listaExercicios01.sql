@@ -79,6 +79,8 @@ order by numero_de_livros desc;
 select produto, receita from vendas
 where receita = (select min(receita) from vendas);
 
+--Exercício 18 (cancelado)
+
 -- Exercício 19
 SELECT nome, 
        (SELECT COUNT(DISTINCT curso) 
@@ -88,6 +90,10 @@ FROM alunos
 order by qntd_cursos, nome;
 
 -- Exercício 20
+select produto, count(*) as qntd_transacoes
+from vendas
+group by produto
+order by qntd_transacoes desc;
 
 
 
