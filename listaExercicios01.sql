@@ -28,3 +28,29 @@ select curso, count(distinct aluno_id) as numero_de_alunos from matriculas
 group by matriculas.curso
 order by numero_de_alunos desc;
 
+-- Exercício 08
+select produto, avg(receita) as media_de_receita from vendas
+group by produto;
+
+-- Exercício 09
+
+-- Exercício 10
+
+-- Exercício 12
+
+-- Exercício 13
+
+-- Exercício 14
+
+-- Exercício 15
+
+-- Exercício 16
+
+-- Exercício 17
+
+-- Exercício 19
+
+-- Exercício 20
+
+
+
