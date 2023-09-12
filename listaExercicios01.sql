@@ -13,3 +13,8 @@ where autor_id = 1;
 select distinct nome from alunos
 inner join matriculas on alunos.id = matriculas.aluno_id
 where matriculas.curso = 'Engenharia de Software'; 
+
+-- Exercício 05
+select produto, sum(receita) as receita_total from vendas
+group by produto;
+
